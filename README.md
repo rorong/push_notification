@@ -41,13 +41,12 @@ Requirement:
 #platform either android or iOS this is required due to multiple devices.
 Device Token and Platform store in a simple ActiveRecord model
 
-#Schema Information
+# Schema Information
 
-# Table name: table_name
-#  id         :integer          not null, primary key
-#  email      :string
-#  device_token      :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  platform   :string(255)
-# push_notification
+Table name: table_name
+id         :integer          not null, primary key
+email      :string
+device_token      :string
+created_at :datetime         not null
+updated_at :datetime         not null
+platform   :string(255)
