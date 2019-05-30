@@ -23,16 +23,19 @@ You will need the following things properly installed on your computer.
 Running / Development:
 * rails s
 
-Send push notification in android
-* gem 'fcm'
+Add Gem to Gemfile
 
-Send push notifications in ios
-* gem 'grocer'
+`Send push notification in android
+* gem 'fcm'`
 
-Backgroung job
-* gem 'sidekiq'
+`Send push notifications in ios
+* gem 'grocer'`
 
-Then run bundle install
+`Backgroung job
+* gem 'sidekiq'`
+
+Install Gem:
+`bundle install`
 
 ## Requirement:
 * device_token stored with mobile app
