@@ -1,11 +1,11 @@
 # Push Notifications for Android and iOS with using Background Job (Sidekiq)
-> Send notifications for android by using Grocer Gem- `https://github.com/grocer/grocer` and
-iOS by using FCM GEM- `https://github.com/spacialdb/fcm` from backend asynchrouns with
-sidekiq as a background job- `https://github.com/mperham/sidekiq`
+> Send notifications for android by using Grocer Gem- https://github.com/grocer/grocer and
+iOS by using FCM GEM- https://github.com/spacialdb/fcm from backend asynchrouns with
+sidekiq as a background job- https://github.com/mperham/sidekiq
 
-* Grocer gem - https://github.com/grocer/grocer'
-* FCM GEM - 'https://github.com/spacialdb/fcm'
-* Sidekiq - 'https://github.com/mperham/sidekiq'
+* Grocer gem - https://github.com/grocer/grocer
+* FCM GEM - https://github.com/spacialdb/fcm
+* Sidekiq - https://github.com/mperham/sidekiq
 
 ## Prerequisites:
 You will need the following things properly installed on your computer.
@@ -23,13 +23,13 @@ You will need the following things properly installed on your computer.
 Running / Development:
 * rails s
 
-send push notification in android
+Send push notification in android
 * gem 'fcm'
 
-send push notifications in ios
+Send push notifications in ios
 * gem 'grocer'
 
-backgroung job
+Backgroung job
 * gem 'sidekiq'
 
 Then run bundle install
@@ -39,7 +39,7 @@ Then run bundle install
 * platform either android or iOS this is required due to multiple devices.
 * Device Token and Platform store in a simple ActiveRecord model
 
-## Schema Information
+Schema Information
 
 Table name: table_name
 * id         :integer          not null, primary key
