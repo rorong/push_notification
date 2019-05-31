@@ -51,4 +51,4 @@ Table name: table_name
 * created_at :datetime         not null
 * updated_at :datetime         not null
 * platform   :string(255)
-# push_notification
+
