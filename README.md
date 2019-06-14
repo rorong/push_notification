@@ -13,17 +13,24 @@ You will need the following things properly installed on your computer.
 * rails -v 5.2.2
 
 
+## Configuration
+See [config/application.example.yml](https://github.com/rorong/push_notification/blob/master/config/application.example.yml).
+The required settings are `fcm_key`.
+
+
 ## Installation:
 * git clone <repository-url>
 * cd <repository>/backend
 * bundle install
+* cp config/application.example.yml config/application.yml
+* cp config/database.example.yml config/database.yml
 * rails db:setup && rails db:seed
 * cd <repository>/frontend
 
 Running / Development:
 * rails s
 
-Add Gem to Gemfile:
+Add Gem to Gemfile or ignore if exists:
 
 Send push notification in android
 * gem 'fcm'
@@ -51,4 +58,3 @@ Table name: table_name
 * created_at :datetime         not null
 * updated_at :datetime         not null
 * platform   :string(255)
-

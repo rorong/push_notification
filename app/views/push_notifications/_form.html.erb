@@ -1,9 +1,9 @@
 <%= form_for(@push_notification, url: send_message_path) do |f| %>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :Message %><br>
     <%= f.text_field :message %>
   </div>
-  <div class="actions">
+  <div class="form-group">
     <%= f.submit "Send Push Notification", class: "btn btn-primary" %>
   </div>
 <% end %>
