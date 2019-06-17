@@ -9,7 +9,7 @@ sidekiq as a background job- https://github.com/mperham/sidekiq
 * Sidekiq - https://github.com/mperham/sidekiq
 
 ![Screenshot](doc/send_notifcation.png)
-![Screenshot](doc/DEVELOPMENT  Sidekiq.png)
+![Screenshot](doc/Sidekiq.png)
 
 ## Prerequisites:
 You will need the following things properly installed on your computer.
