@@ -9,8 +9,8 @@ sidekiq as a background job- https://github.com/mperham/sidekiq
 
 ## Prerequisites:
 You will need the following things properly installed on your computer.
-* ruby -v 2.5.0
-* rails -v 5.2.2
+* ruby -v 2.6.2
+* rails -v 5.2.3
 
 
 ## Configuration
