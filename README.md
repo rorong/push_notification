@@ -1,11 +1,15 @@
 # Push Notifications for Android and iOS with using Background Job (Sidekiq)
-> Send notifications for android by using Grocer Gem- https://github.com/grocer/grocer and
+
+Send notifications for android by using Grocer Gem- https://github.com/grocer/grocer and
 iOS by using FCM GEM- https://github.com/spacialdb/fcm from backend asynchrouns with
 sidekiq as a background job- https://github.com/mperham/sidekiq
 
 * Grocer gem - https://github.com/grocer/grocer
 * FCM GEM - https://github.com/spacialdb/fcm
 * Sidekiq - https://github.com/mperham/sidekiq
+
+![Screenshot](doc/send_notifcation.png)
+![Screenshot](doc/DEVELOPMENT  Sidekiq.png)
 
 ## Prerequisites:
 You will need the following things properly installed on your computer.
