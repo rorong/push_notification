@@ -17,7 +17,7 @@ class SendMessageWorker
   end
 
   def pusher
-    Grocer.pusher(
+    @pusher = Grocer.pusher(
       # path to certificates
       # Put your apn_development.pem and apn_production.pem certificates
       # from Apple in your RAILS_ROOT/config/certs directory.
@@ -40,18 +40,17 @@ class SendMessageWorker
     pusher.push(notification)
   end
 
-  def perform(platform, device_token, message, custom_data = {})
+  def perform(platform, device_token, message)
     # Put your apn_development.pem and apn_production.pem certificates
     # from Apple in your RAILS_ROOT/config/certs directory.
     # unless Rails.env == :test
     return if Rails.env == :test
-
     return unless %w[iOS android].include?(platform)
 
     if platform == 'iOS'
       ios_notification(device_token, message)
     else
-      data = { message: message }.merge(custom_data)
+      data = { message: message }
       fcm_connection.send([device_token], data: data)
     end
   end

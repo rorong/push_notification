@@ -62,3 +62,13 @@ Table name: table_name
 * created_at :datetime         not null
 * updated_at :datetime         not null
 * platform   :string(255)
+
+## RSpec Usage
+
+We write tests to ensure that everything goes according to plan.
+
+# Gem Used:
+[rspec-rails](https://github.com/rspec/rspec-rails) installed.
+
+[rspec-sidekiq](https://github.com/philostler/rspec-sidekiq)-
+Used for testing of Sidekiq jobs via a collection of matchers and helpers.

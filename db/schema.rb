@@ -12,9 +12,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_190_528_105_606) do
+ActiveRecord::Schema.define(version: 20_190_624_092_551) do
   create_table 'push_notifications', force: :cascade do |t|
     t.string 'message'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
+  create_table 'users', force: :cascade do |t|
+    t.string 'platform'
+    t.string 'device_token'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end

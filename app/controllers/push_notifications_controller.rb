@@ -2,8 +2,12 @@
 
 # This is for send push notification in devices.
 class PushNotificationsController < ApplicationController
-  def new
+  def initialize
     @push_notification = PushNotification.new
+  end
+
+  def new
+    @push_notification
   end
 
   def send_message
